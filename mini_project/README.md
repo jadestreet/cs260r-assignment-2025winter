@@ -4,7 +4,7 @@
 
 -----
 
-## **Overview**
+## **1 Overview**
 
 The goal of this assignment is to apply your knowledge of reinforcement learning (RL) to train a competitive RL agent
 that performs well in the **MetaDrive Safety Environment**. Before that, you also need to conduct the generalization
@@ -12,7 +12,7 @@ experiment with your selected algorithm.
 
 You are free to choose **any RL algorithm or codebase** to train your agent.
 
-### **Generalization Experiment**
+### **2 Generalization Experiment**
 
 - Train your agent in a set of **training environments** (with 1, 3, or 10 unique maps).
 - Evaluate the performance of your trained agents in the **validation environment** as well as their original training
@@ -57,7 +57,7 @@ def single_env_factory():
     return get_training_env({"num_scenarios": 3})
 ```
 
-### **Get Your Agent**
+### **3 Get Your Agent**
 
 - Train your agent using any RL algorithm in arbitrary environment. You can use `get_training_env()` as a starting
   point.
@@ -70,7 +70,7 @@ def single_env_factory():
 - Please make sure your agent can be evaluated by running `python eval.py --agent-name agent_YOUR-UID`, when current working directory is `mini_project`.
 - To ensure compatibility, you can create a new conda environment with only torch and some basic packages installed. Then run `eval.py` in this environment to check if your agent can be evaluated.
 
-## **What You Need to Submit**
+## **4 What You Need to Submit**
 
 Your submission must contain:
 
@@ -88,7 +88,7 @@ Your submission must contain:
 3. **Your training code and logs (if any)** (The code zip file)
     - Zip the whole mini project folder, include all your code and logs and upload it to bruinlearn.
 
-## **Steps to Complete the Assignment**
+## **5 Steps to Complete the Assignment**
 
 1. **Select an RL algorithm** to train your agent.
 2. **Train your agent** in training environments (with 1, 3, and 10 maps).
@@ -97,7 +97,7 @@ Your submission must contain:
 4. **Refine your agent** to achieve the best performance possible.
 5. **Make your submission**.
 
-## **Environment Overview**
+## **6 Environment Overview**
 
 The agent needs to steer the target vehicle with low-level acceleration, braking, and steering,
 to reach its destination.
@@ -120,7 +120,7 @@ You don't have to avoid using the validation environment for training (as TA can
 validation env right? so to ensure fairness, you're OK to use the validation environment for training and that's why we
 also have a hidden test env).
 
-## Evaluation Protocol & Grading
+## 7 Evaluation Protocol & Grading
 
 ### Baseline
 
